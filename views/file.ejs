@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/app.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapp">
+      <h1>information about the file</h1>
+      
+      <% if (typeof filename !== 'undefined' &&  typeof size !== 'undefined' && typeof mimetype !== 'undefined' && typeof timestamp !== 'undefined'  && typeof userid !== 'undefined') { %>
+      <p>FileName: <span><%=filename%></span></p>
+        <p>Size: <span><%=size%></span></p>
+        <p>Mimetype: <span><%=mimetype%></span></p>
+        <p>Timestamp: <span><%=new Date(Number(timestamp))%></span></p>
+        <p>Path: <span><%=uniquefilenamepath%></span></p>
+        <p>UserId: <span><%=userid%></span></p>
+        <br>
+      <% } %>
+
+      <% if (typeof file !== 'undefined' ) { %>
+        <p>FileName: <span><%=file.filename%></span></p>
+        <p>Size: <span><%=file.size%></span></p>
+        <p>Mimetype: <span><%=file.mimetype%></span></p>
+        <p>Timestamp: <span><%=new Date(Number(file.timestamp))%></span></p>
+        <p>Path: <span><%=file.uniquefilenamepath%></span></p>
+        <p>User_Id: <span><%=file.userid%></span></p>
+        <p>File_Id: <span><%=file.id%></span></p>
+        <br>
+        <a href="/file/download/<%=file.id%>">Download File</a>
+        <% } %>
+      <br>
+      <br>
+      <a href="/file/list">View all files</a>
+      <br>
+      <br>
+      <a href="/file/upload">Back to upload</a>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  background-color: #444444;
+  color: #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.wrapp {
+  text-align: center;
+}
+
+.wrapp h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.wrapp h5 span {
+  color: greenyellow;
+  font-size: 3rem;
+}
+.wrapp p span {
+  color: rgba(19, 226, 140, 0.89);
+  font-size: 1.7rem;
+}
+.wrapp a {
+  text-decoration: none;
+  color: rgba(19, 226, 140, 0.89);
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+.wrapp .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.wrapp .row .fileName {
+  font-size: 2rem;
+}
+.wrapp .row > div {
+  margin-bottom: 3rem;
+}
+.wrapp form {
+  width: 400px;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.wrapp form input {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.wrapp form input[type="submit"] {
+  background-color: rgb(31, 30, 30);
+  color: rgb(209, 231, 84);
+  border: none;
+  transition: all .2s ease-in;
+}
+
+.wrapp form input[type="submit"]:hover {
+  background-color: rgb(209, 231, 84);
+  color: rgb(31, 30, 30);
+}
+
+.wrapp form > div {
+  margin-bottom: 1rem;
+}
+
+.wrapp form > div:last-of-type {
+  margin-top: 3rem;
+}
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 12px;
+  background-color: rgb(31, 30, 30);
+  color: rgb(209, 231, 84);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.file-input__label svg {
+  height: 16px;
+  margin-right: 4px;
+}
