@@ -1,5 +1,5 @@
 # Failer
-It's a Node.js App where you can SignIn/Login, upload the files and also read/update/download it 
+It's a Node.js App where you can SignIn/Login, upload the files and also read/update/download it. Database: PostgreSQL 
 # How to use it ?
  - Create a file `.env` at the root of the project
  - Create a folder `uploads` also at the root of the project
