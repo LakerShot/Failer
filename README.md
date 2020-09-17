@@ -16,7 +16,8 @@ DB_DATABASE=
 
 SESSION_SECRET=
 ```
-- In order to run this project open terminal and run command ```npm run dev```
+- Сreate two tables in the database (the description of which is in the ```tables.sql``` file)
+- In order to run this project open terminal and run the command ```npm run dev```
 ---
 
 ### That's all :D
