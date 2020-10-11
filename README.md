@@ -21,3 +21,6 @@ SESSION_SECRET=
 ---
 
 ### That's all :D
+
+Copyright (c) 2020 LakerShot
+
